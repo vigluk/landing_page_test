@@ -13,22 +13,27 @@ body {
 }
 .header p {
     font-size: 24px;
+    font-weight: bold;
     margin-left: 7rem;
 }
 .header-links {
     display: flex;
     flex: 1;
     justify-content: flex-end;
-    border: 5px red solid;
     margin-right: 7rem;
 }
-.header-links a {
-    border: 5px blue solid;
+a {
     margin: auto 1rem;
+    color: #E5E7EB;
+}
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
 }
 .hero-section {
     background-color: #1F2937;
-    border: 5px red solid;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -47,7 +52,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     flex: 40%;
-    border: 5px red solid;
     box-sizing: border-box;
     justify-content: flex-end;
 }
@@ -58,16 +62,16 @@ body {
 }
 .hero-writing {
     flex: 40%;
-    border: 5px red solid;
     color: #E5E7EB;
 }
-button {
+.hero-section button {
     color: white;
     background-color: #3882F6;
     border-radius: 7px;
     border: #3882F6;
     font-size: 18px;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
 }
 .information h1 {
     font-size: 36px;
@@ -82,21 +86,22 @@ button {
 .info-container {
     display: flex;
     flex-wrap: wrap;
-    margin: 4rem 7rem;
+    margin: 4rem 7rem 10rem;
+    padding: 0 5rem;
 }
 .info-box {
-    flex: 20%;
+    flex: 10%;
     font-size: 14px;
     font-weight: 200;
     padding: 1rem;
     text-align: center;
 }
 .info-box img {
-width: 200px;
-height: 200px;
-display: block;
+width: 100%;
+aspect-ratio: 1/1;
 margin: auto;
 border-radius: 7px;
+object-fit: cover;
 }
 .quote {
     background-color: #E5E7EB;
@@ -112,10 +117,30 @@ border-radius: 7px;
 .call-to-action {
     margin: 7rem 10rem;
     background-color: #3882F6;
-    padding: 2rem;
+    padding: 2em;
     border-radius: 7px;
     color: #F9FAF8;
+    display: flex;
+    justify-content: space-around;
+}
+.cta-text-box {
+    margin: auto;
 }
 .call-to-action button {
-    border:2px #F9FAF8;
+    margin: auto;
+    color: white;
+    background-color: #3882F6;
+    border-radius: 7px;
+    border: 2px solid #F9FAF8;
+    font-size: 18px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+}
+.footer {
+    background-color: #1F2937;
+    padding: 2rem;
+}
+.footer p{
+    text-align: center;
+    color: #ffffff;
 }
